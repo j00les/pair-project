@@ -1,0 +1,32 @@
+[
+  {
+    "bankName": "BCU",
+    "balance": 300000,
+    "accountNumber": "87656787",
+    "type": "Xpresi"
+  },
+  {
+    "bankName": "Manderi",
+    "balance": 100000,
+    "accountNumber": "87253865",
+    "type": "Black"
+  },
+  {
+    "bankName": "BNZ",
+    "balance": 120000,
+    "accountNumber": "87263845",
+    "type": "Xpresi"
+  },
+  {
+    "bankName": "Standard Chartured",
+    "balance": 500000,
+    "accountNumber": "87635645",
+    "type": "Xpresi"
+  },
+  {
+    "bankName": "BCU",
+    "balance": 1000000,
+    "accountNumber": "65365467",
+    "type": "Premium"
+  }
+]
