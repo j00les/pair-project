@@ -3,30 +3,35 @@
     "bankName": "BCU",
     "balance": 300000,
     "accountNumber": "87656787",
-    "type": "Xpresi"
+    "type": "Xpresi",
+    "UserId": 1
   },
   {
     "bankName": "Manderi",
     "balance": 100000,
     "accountNumber": "87253865",
-    "type": "Black"
+    "type": "Black",
+    "UserId": 2
   },
   {
     "bankName": "BNZ",
     "balance": 120000,
     "accountNumber": "87263845",
-    "type": "Xpresi"
+    "type": "Xpresi",
+    "UserId": 3
   },
   {
     "bankName": "Standard Chartured",
     "balance": 500000,
     "accountNumber": "87635645",
-    "type": "Xpresi"
+    "type": "Xpresi",
+    "UserId": 4
   },
   {
     "bankName": "BCU",
     "balance": 1000000,
     "accountNumber": "65365467",
-    "type": "Premium"
+    "type": "Premium",
+    "UserId": 5
   }
 ]
