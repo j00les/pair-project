@@ -1,7 +1,7 @@
 [
     {"username": "AlexCok", "email": "Cok@mail.com", "password": "cok123", "role": "admin"},
     {"username": "AlaqManis", "email": "ManggaManis@mail.com", "password": "mangga123", "role": "user"},
-    {"username": "Alexa321", "email": "Alexa123@mail.com", "password": "alexa123", "role": "admin"},
-    {"username": "RavenTamvan", "email": "RavenTamvan@mail.com", "password": "raven123", "role": "admin"},
+    {"username": "Alexa321", "email": "Alexa123@mail.com", "password": "alexa123", "role": "user"},
+    {"username": "RavenTamvan", "email": "RavenTamvan@mail.com", "password": "raven123", "role": "user"},
     {"username": "WandiLemah", "email": "Wandz@mail.com", "password": "wanda123", "role": "user"}
 ]
