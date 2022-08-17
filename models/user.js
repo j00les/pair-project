@@ -25,5 +25,18 @@ module.exports = (sequelize, DataTypes) => {
       modelName: "User",
     }
   );
+
+  // Incubator.addHook("beforeCreate", (incubator) => {
+  //   const intl = `1992-A-${new Date().getTime()}`;
+  //   const nat = `1994-B-${new Date().getTime()}`;
+  //   const prov = `1996-C-${new Date().getTime()}`;
+
+  //   return incubator.level === "International"
+  //     ? (incubator.code = intl)
+  //     : incubator.level === "National"
+  //     ? (incubator.code = nat)
+  //     : (incubator.code = prov);
+  // });
+
   return User;
 };

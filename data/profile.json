@@ -1,7 +1,37 @@
 [
-    {"name": "Alex", "age": 24, "address": "Jalan Mangga", "phoneNumber": 123456789, "gender": "male"},
-    {"name": "Alaq", "age": 28, "address": "Jalan Pisang", "phoneNumber": 123456788, "gender": "male"},
-    {"name": "Alexa", "age": 22, "address": "Jalan Melon", "phoneNumber": 123456787, "gender": "female"},
-    {"name": "Raven", "age": 23, "address": "Jalan Anggur", "phoneNumber": 123456786, "gender": "male"},
-    {"name": "Wandi", "age": 27, "address": "Jalan Belimbing", "phoneNumber": 123456785, "gender": "male"}
+  {
+    "name": "Alex",
+    "age": 24,
+    "address": "Jalan Mangga",
+    "phoneNumber": 123456789,
+    "gender": "male"
+  },
+  {
+    "name": "Alaq",
+    "age": 28,
+    "address": "Jalan Pisang",
+    "phoneNumber": 123456788,
+    "gender": "male"
+  },
+  {
+    "name": "Alexa",
+    "age": 22,
+    "address": "Jalan Melon",
+    "phoneNumber": 123456787,
+    "gender": "female"
+  },
+  {
+    "name": "Raven",
+    "age": 23,
+    "address": "Jalan Anggur",
+    "phoneNumber": 123456786,
+    "gender": "male"
+  },
+  {
+    "name": "Wandi",
+    "age": 27,
+    "address": "Jalan Belimbing",
+    "phoneNumber": 123456785,
+    "gender": "male"
+  }
 ]
