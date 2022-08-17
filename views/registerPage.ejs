@@ -46,26 +46,31 @@
         color: black;
       }
     </style>
-    <title>Login Page</title>
+    <title>Register</title>
   </head>
   <body>
     <nav class="topnav">
-      <a href="/register/">Register</a>
+      <a href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
     </nav>
     <section class="form">
       <form action="">
-        <h1>Login Page</h1>
-        <label for="email">
+        <h1>Register</h1>
+        <label for="username">
           Username:
+          <input id="username" name="username" type="text" />
+        </label>
+        <label for="password">
+          Email:
           <input id="email" name="email" type="text" />
         </label>
-        <label for="email">
+        <label for="password">
           Password:
-          <input id="email" name="email" type="text" />
+          <input id="password" name="password" type="text" />
         </label>
+        <button type="submit">Submit</button>
       </form>
     </section>
   </body>
