@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Details</title>
+    <style>
+      .container {
+        width: fit-content;
+        margin: 50px auto;
+      }
+      th,
+      td {
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Account Detail</h2>
+      <table border="1">
+        <tr>
+          <th>Bank</th>
+          <th>Balance</th>
+          <th>Account Number</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td><%= detail.bankName %></td>
+          <td><%= toRupiah(detail.balance)%></td>
+          <td><%= detail.accountNumber %></td>
+          <td><%= detail.type %></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

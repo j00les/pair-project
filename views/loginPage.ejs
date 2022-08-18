@@ -51,21 +51,22 @@
   <body>
     <nav class="topnav">
       <a href="/register/">Register</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
     </nav>
     <section class="form">
-      <form action="">
+      <% if (error) { %>
+      <p><%= error %></p>
+      <% } %>
+      <form action="/login" method="post">
         <h1>Login Page</h1>
         <label for="email">
           Username:
-          <input id="email" name="email" type="text" />
+          <input id="email" name="username" type="text" />
         </label>
         <label for="email">
           Password:
-          <input id="email" name="email" type="text" />
+          <input type="password" id="email" name="password" type="text" />
         </label>
+        <button type="submit">Login</button>
       </form>
     </section>
   </body>

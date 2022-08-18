@@ -1,5 +1,7 @@
-"use strict";
-const { Model } = require("sequelize");
+'use strict';
+const { Model } = require('sequelize');
+const bcrypt = require('bcrypt');
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -9,34 +11,52 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      User.hasMany(models.Account, { foreignKey: "UserId" });
-      User.hasOne(models.Profile, { foreignKey: "UserId" });
+      User.hasMany(models.Account, { foreignKey: 'UserId' });
+      User.hasOne(models.Profile, { foreignKey: 'UserId' });
     }
   }
   User.init(
     {
-      username: DataTypes.STRING,
-      email: DataTypes.STRING,
-      password: DataTypes.STRING,
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: 'Username cannot be empty',
+          },
+        },
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          isEmail: {
+            msg: 'You must fill it with email format ex: (foo@bar.com)',
+          },
+        },
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          min: {
+            args: [[8]],
+            msg: 'Password must be at least 8 characters',
+          },
+        },
+      },
       role: DataTypes.STRING,
     },
     {
       sequelize,
-      modelName: "User",
+      modelName: 'User',
     }
   );
 
-  // Incubator.addHook("beforeCreate", (incubator) => {
-  //   const intl = `1992-A-${new Date().getTime()}`;
-  //   const nat = `1994-B-${new Date().getTime()}`;
-  //   const prov = `1996-C-${new Date().getTime()}`;
-
-  //   return incubator.level === "International"
-  //     ? (incubator.code = intl)
-  //     : incubator.level === "National"
-  //     ? (incubator.code = nat)
-  //     : (incubator.code = prov);
-  // });
+  User.addHook('beforeCreate', (user) => {
+    user.role = 'user';
+    user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10));
+  });
 
   return User;
 };
