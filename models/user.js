@@ -33,6 +33,9 @@ module.exports = (sequelize, DataTypes) => {
           isEmail: {
             msg: 'You must fill it with email format ex: (foo@bar.com)',
           },
+          notEmpty: {
+            msg: 'Email must be filled',
+          },
         },
       },
       password: {
@@ -42,6 +45,9 @@ module.exports = (sequelize, DataTypes) => {
           min: {
             args: [[8]],
             msg: 'Password must be at least 8 characters',
+          },
+          notEmpty: {
+            msg: 'Password must be filled',
           },
         },
       },
