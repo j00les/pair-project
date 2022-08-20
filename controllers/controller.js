@@ -95,6 +95,7 @@ class Controller {
       where: { id },
     })
       .then((detail) => {
+        console.log(detail);
         res.render('accountDetails', { detail, toRupiah });
       })
       .catch((err) => {
