@@ -16,8 +16,6 @@ class Controller {
       where: { username },
     })
       .then((user) => {
-        // res.send(user.Accounts);
-        // res.render('dashboard', { user });
         res.redirect('/users');
       })
       .catch((err) => {
